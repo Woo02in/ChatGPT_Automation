@@ -53,37 +53,7 @@ ChatGPT 계정의 대화 기록을 자동으로 초기화하는 도구입니다.
 - SeleniumBase
 - BeautifulSoup
 
-## 🚀 설치 및 실행
 
-### Change_Password 실행
-```bash
-cd Change_Password
-# 가상환경 활성화 (Windows)
-venv\Scripts\activate
-# 또는 (Linux/Mac)
-source venv/bin/activate
-
-# 필요한 패키지 설치
-pip install -r requirements.txt
-
-# 애플리케이션 실행
-python app.py
-```
-
-### Reset_Record 실행
-```bash
-cd Reset_Record
-# 가상환경 활성화 (Windows)
-venv\Scripts\activate
-# 또는 (Linux/Mac)
-source venv/bin/activate
-
-# 필요한 패키지 설치
-pip install -r requirements.txt
-
-# 애플리케이션 실행
-python reset_record.py
-```
 
 ## 📋 필요한 패키지
 

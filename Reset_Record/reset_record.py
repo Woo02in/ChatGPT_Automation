@@ -404,7 +404,16 @@ def openai_password_reset(email, password):
                 print("인증 오류")
                 return False
                 
-            time.sleep(10)                        
+            time.sleep(20)
+            sb.driver.switch_to.active_element.send_keys(Keys.TAB)
+            time.sleep(0.5)
+            sb.driver.switch_to.active_element.send_keys(Keys.TAB)
+            time.sleep(0.5)
+            sb.driver.switch_to.active_element.send_keys(Keys.TAB)
+            time.sleep(0.5)
+            sb.driver.switch_to.active_element.send_keys(Keys.TAB)
+            time.sleep(0.5)
+           
             # 워크스페이스 선택 및 랜덤하게 가끔 뜨는 팝업창 제거
             sb.driver.switch_to.active_element.send_keys(Keys.RETURN)
             time.sleep(2)
