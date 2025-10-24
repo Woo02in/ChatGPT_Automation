@@ -1,0 +1,22 @@
+reset_record.py:1014:SB
+--------------------------------------------------------------------
+Last Page: [WARNING! Browser Not Open!]
+ Duration: 143.68s
+  Browser: Chrome 141.0.7390.66
+   Driver: chromedriver 141.0.7390.76
+Timestamp: 1760344267  (Unix Timestamp)
+     Date: Monday, 13 October 2025
+     Time: 5:31:07 PM  (대한민국 표준시, UTC+09:00)
+--------------------------------------------------------------------
+Traceback:
+  Traceback (most recent call last):
+  File "C:\Users\choiwooin\Desktop\ChatGPT_Automation_wooin\Reset_Record\reset_record.py", line 425, in openai_password_reset
+    sb.open(settings_url)
+    ~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\choiwooin\Desktop\ChatGPT_Automation_wooin\Change_Password\venv\Lib\site-packages\seleniumbase\fixtures\base_case.py", line 232, in open
+    self._check_browser()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\choiwooin\Desktop\ChatGPT_Automation_wooin\Change_Password\venv\Lib\site-packages\seleniumbase\fixtures\base_case.py", line 9510, in _check_browser
+    raise NoSuchWindowException("Active window was already closed!")
+selenium.common.exceptions.NoSuchWindowException: Message: Active window was already closed!
+

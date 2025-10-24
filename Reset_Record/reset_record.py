@@ -54,7 +54,7 @@ def openai_password_reset(email, password):
             
             # 이메일 입력
             try:
-                sb.type("input[type='email']", email)                
+                sb.type("input[id='email']", email)                
                 print(email)
                 time.sleep(1)                
             except Exception as e:

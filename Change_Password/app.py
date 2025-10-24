@@ -48,7 +48,8 @@ def openai_password_reset(email, method, new_password):
 
         # 이메일 입력
         try:
-            sb.type("input[type='email']", email)                
+            sb.type("input[id='email']", email) 
+            #sb.driver.switch_to.active_element.send_keys(Keys.RETURN)               
             print(email)
             time.sleep(2)                
         except Exception as e:
@@ -71,7 +72,9 @@ def openai_password_reset(email, method, new_password):
             sb.driver.switch_to.active_element.send_keys(Keys.TAB)                              
             time.sleep(1)                
             sb.driver.switch_to.active_element.send_keys(Keys.TAB)                              
-            time.sleep(1)                
+            time.sleep(1) 
+            sb.driver.switch_to.active_element.send_keys(Keys.TAB)    
+            time.sleep(1)                    
             sb.driver.switch_to.active_element.send_keys(Keys.RETURN)  
             print("비밀번호 찾기 버튼 클릭 완료")
             
@@ -82,8 +85,11 @@ def openai_password_reset(email, method, new_password):
         time.sleep(1)
 
         try:
-            sb.driver.switch_to.active_element.send_keys(Keys.TAB)                              
+            sb.driver.switch_to.active_element.send_keys(Keys.TAB)
+            #print("tab 1회")                              
             time.sleep(1)                
+            sb.driver.switch_to.active_element.send_keys(Keys.TAB)
+            #print("tab 2회")
             sb.driver.switch_to.active_element.send_keys(Keys.RETURN)  
             print("계속 버튼 완료")
             time.sleep(2)
